@@ -1,0 +1,5 @@
+<meta>
+	<info author="shamont27619" name="Freeroam Mafia Missions" version="4.2.0" type="script" description="Mafia Mission Near middle of the map. Random each time. You need SLOTHBOT resource running for the peds." />
+	<script src="ServerStuff.lua" type="server" />
+	<script src="ClientStuff.lua" type="client"/>
+</meta>

@@ -1,0 +1,5 @@
+<meta>
+	<info author="shamont27619" name="Freeroam Random Missions" version="4.2.0" type="script" description="Over 9000 RANDOM missions using SLOTHBOT's ped resource." />
+	<script src="ServerFunctions.lua" type="server" />
+	<script src="FreeroamAssassinEasyScript.lua" type="client"/>
+</meta>

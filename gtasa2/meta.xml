@@ -1,0 +1,7 @@
+<meta>
+	<info type="script" author="Riccardo Cecchini" version="2.1" />
+
+	<script src="client_base.lua" type="client" />
+	<script src="server_base.lua" type="server" />
+
+</meta>
