@@ -1,0 +1,8 @@
+<meta>
+	<info type="script" author="Riccardo Cecchini" version="2.1" />
+
+	<include resource="editor"/>
+	<include resource="npchlc_traffic_editor"/>
+	<include resource="npc_tseq"/>
+
+</meta>
