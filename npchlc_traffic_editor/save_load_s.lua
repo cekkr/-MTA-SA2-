@@ -1,5 +1,5 @@
 function initSaveLoad()
-	map_name = "Untitled"
+	map_name = "san_andreas"
 	setFakeElementData(name_root,"name",map_name)
 
 	addCommandHandler("trafficname",changeTrafficMapName)
@@ -58,13 +58,18 @@ end
 
 ------------------------------------------------------------------------
 
+function trafficPath(path)
+	local sum = path -- ":npchlc_traffic/paths/maps/"..path
+	return sum
+end
+
 function saveTraffic()
 	if savetraffic_coroutine or loadtraffic_coroutine or cleartraffic_coroutine then return end
 	if not map_name then
 		outputInfoMessage("Wrong paths map name")
 		return
 	end
-	savetraffic_file = fileCreate("paths/"..map_name)
+	savetraffic_file = fileCreate(trafficPath(map_name))
 	if not savetraffic_file then
 		outputInfoMessage("Failed to create paths map file")
 		return
@@ -169,9 +174,9 @@ function loadTraffic()
 		outputInfoMessage("Wrong paths map name")
 		return
 	end
-	loadtraffic_file = fileOpen("paths/"..map_name,true)
+	loadtraffic_file = fileOpen(trafficPath(map_name),true)
 	if not loadtraffic_file then
-		outputInfoMessage("Failed to open paths map file")
+		outputInfoMessage("Failed to open paths map file " .. trafficPath(map_name))
 		return
 	end
 	clearTraffic()
